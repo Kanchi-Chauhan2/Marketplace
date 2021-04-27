@@ -1,0 +1,102 @@
+.basket-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height:100%;
+    margin:3rem auto;
+    border:1px solid darkslategrey;
+    &__1{
+        display:flex;
+        padding:3rem;
+        justify-content: space-between;
+        border:1px solid gray;
+        margin:1rem;
+        &--flex1{
+            font-size:2rem;
+            &--select{
+                .payment-duration{
+                    width:22rem;
+                    padding:1rem;
+                    margin-top:2rem;
+                    font-size:2rem;
+                }
+            }
+        }
+        &--flex2{
+            margin:auto 0rem;
+            &--input{
+                font-size: 2rem;
+                width:50%;
+                border:none;
+                color:green;
+            }
+        }
+        
+    }
+    &__2{
+        display:flex;
+        padding:3rem;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+        margin:1rem;
+        &--offer{
+            &--link{
+                font-size:1.7rem;
+            }
+        }
+        &--empty{
+            &--empty-cart{
+                font-size:1.7rem;
+            }
+        }
+    }
+    &__3{
+        display:flex;
+        padding:3rem;
+        justify-content: space-between;
+        margin:1rem;
+       &--subtotal{
+        font-size:1.7rem;
+
+       }
+       &--price{
+            &--input{
+                font-size: 2rem;
+                width:50%;
+                border:none;
+                color:green;
+ 
+            }
+       }
+    }
+    &__4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2rem;
+        &--text1{
+            line-height: 3rem;
+
+        }
+        &--text2{
+            line-height: 2rem;
+            a{
+                font-size:1.9rem;
+                font-weight:600;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__5{
+        padding:1rem;
+        margin:2rem;
+
+        button{
+            padding:1rem 30rem;
+            background-color: black;
+            color:white;
+            font-size:1.5rem;
+            text-align:center;
+        }
+    }
+}

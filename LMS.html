@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>LMS</title>
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>   
+
+<!-----------------------------MENU------------------------------------>
+
+<div class="menu">
+  <div class="menu__header">
+    <div class="menu__header--1">
+      <ul>
+        <li><a href="https://adhyay.co.in/" style="font-size:1.6rem;">HOME</a></li>
+      </ul>
+    </div>
+    <div class="menu__header--2">
+      <ul>
+        <li><a href="LMS.html" style="font-size:1.6rem;">LMS</a></li>
+      </ul>
+    </div>
+       <div class="menu__header--2">
+      <ul>
+        <li><a href="LMS.html" style="font-size:1.6rem;">Video Conferencing</a></li>
+      </ul>
+    </div>
+          <div class="menu__header--2">
+      <ul>
+        <li><a href="content.html#" style="font-size:1.6rem;">LMS + Video Conferencing</a></li>
+      </ul>
+    </div>
+          <div class="menu__header--3">
+      <ul>
+        <li><a href="SRMS.html#" style="font-size:1.6rem;">ERP</a></li>
+      </ul>
+    </div>
+    <div class="menu__header--2">
+      <ul>
+        <li><a href="LMS+ERP.html" style="font-size:1.6rem;">LMS + ERP</a></li>
+      </ul>
+    </div>
+
+    <div class="menu__header--3">
+      <ul>
+        <li><a href="vc.html#" style="font-size:1.6rem;">LMS + Video Conferencing + ERP</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!----------------------------BANNER----------------------------------->
+        <div class="banner1">
+
+            <div class="banner1__text">
+             LMS
+            </div>
+            <div class="banner1__background">
+                <div class="banner1__background--1">
+
+                </div>
+                <div class="banner1__background--2">
+                  
+                </div>
+                <div class="banner1__background--4">
+                  
+                </div>
+                <div class="banner1__background--5">
+                  
+                </div>
+                <div class="banner1__background--6">
+                  
+                </div>
+                <div class="banner1__background--7">
+                  
+                </div>
+                <div class="banner1__background--3">
+                  
+                </div>
+            </div>
+              
+              <div class="banner1__image">
+                <img src="img/ADHYAY-2.png" alt="image" class="banner1__image--imgstyle"/>
+              </div>
+              <div class="banner1__typewriter">
+                <h1>At Adhyay,</h1>
+                <h1 class="banner1__typewriter--text"> </h1>
+              </div>
+          </div>
+
+<script>
+  const text=['We take things to a totally new level with this highly usable and affordable system.',' we are creating technologies that fill up the gap with easy to use functionalities','We deliver unique and robust solution for data and information.'];;
+  let count=0;
+  let index=0;
+  let currentText='';
+  let letter='';
+
+ ( function type(){
+
+    if(count===text.length){
+      count=0;
+    }
+    currentText=text[count];
+    letter=currentText.slice(0,++index);
+
+    document.querySelector('.banner1__typewriter--text').textContent=letter;
+    if(letter.length===currentText.length){
+      count++;
+      index=0;
+    }
+    setTimeout(type,80);
+  }());
+
+</script>
+
+
+<!---<script>
+  const TypeWriter=function(txtElement,words,wait=3000){
+    this.txtElement=txtElement;
+    this.words=words;
+    this.txt='';
+    this.wordIndex=0;
+    this.wait=parseInt(wait,10);
+    this.type();
+    this.isDeleting=false;
+  }
+
+  //Type Method
+
+  TypeWriter.prototype.type=function(){
+    const current=this.wordIndex%this.words.length;
+    const fullTxt=this.words[current];
+
+    if(this.isDeleting){
+      this.txt=fullTxt.substring(0,this.txt.length-1);
+
+    }else{
+
+      this.txt=fullTxt.substring(0,this.txt.length+1);
+    }
+
+      this.txtElement.innerHtml=`<span class="txt">${this.txt}</span>`;
+    setTimeout(()=>this.type(),500)
+  }
+
+  //Init on DOM Load
+  document.addEventListener('DOMContentLoaded',init);
+
+  //Init App
+  function init(){
+    const txtElement=document.querySelector('.banner1__typewriter--text');
+    const words=JSON.parse(txtElement.getAttribute('data-words'));
+    const wait=txtElement.getAttribute('data-wait');
+
+    new TypeWriter(txtElement,words,wait);
+  }
+</script>------->
+<!---------------------------Footer------------------------->
+    
+<div class="footer" style= "background-color: #ffffff;">
+
+  <div class="footer__div3">
+    LMS is the Learning Management system for the schools and education centers to provide digital support in better learning and communication with the student and parent.
+  </div>
+    <a href="https://srms.adhyay.co.in/index.php/Signup/Signup" class="footer__div3--link" target="_blank">  Know more!</a>
+</div>
+<script>
+  let footer1=document.querySelector(".footer");
+  window.addEventListener("scroll",()=>{
+  let scroll=window.pageYOffset;
+  console.log(scroll);
+  if (scroll==500 || scroll<=711){  
+    for(scroll=500;scroll<711;scroll++){
+      const val = window.pageYOffset * .1;
+      footer1.style.marginTop=-1*val+'px';
+    }
+  }
+  });
+
+</script>
+
+
+<!-----------------------------IMAGE-IMMERSION------------------------>
+        <div class="container__img">
+              <div class="container__img--1">
+
+              </div>
+              <div class="container__img--2">
+
+              </div>
+              <div class="container__img--3">
+
+              </div>
+              <div class="container__img--4">
+
+              </div>
+              <div class="container__img--5">
+
+              </div>
+              <div class="container__img--6">
+
+              </div>
+              <div class="container__img--7">
+
+              </div>
+              <div class="container__img--8">
+
+              </div>
+              <div class="container__img--9">
+
+              </div>
+              <div class="container__img--10">
+
+              </div>
+              <div class="container__img--box">
+                <div class=" container__img--box--1">
+                  <div>
+                    <span>SR</span>
+                    <p>School Resource- A better and easy approach to let students learn from Adhyay platform and allow students to share their learning material in the form of: doc file, png, PDF </p> 
+                  </div>
+                </div>
+                <div class="container__img--box--2">
+                  <div>
+                    <span>M</span>
+                    <p>Management- A complete management tool for students and teachers to stack their data in sequence and create new project for the upcoming exams or tests. Our software also allow keeping data safe for 10 years without security hack.</p>
+                  </div>
+                </div>
+                <div class="container__img--box--3">
+                  <div>
+                    <span>S</span>
+                    <p>System- A digital application that solves daily management work for the educational institute and provide a good platform for sharing data and information among teachers, students, parents and the school staff.</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="footer" style= "background-color: #ffffff;">
+
+              <div class="footer__div3">
+                LMS is the Learning Management system for the schools and education centers to provide digital support in better learning and communication with the student and parent.
+              </div>
+                <a href="https://srms.adhyay.co.in/index.php/Signup/Signup" class="footer__div3--link" target="_blank">  Know more!</a>
+            </div>
+            <script>
+              let footer2=document.querySelector(".footer");
+              window.addEventListener("scroll",()=>{
+              let scroll=window.pageYOffset;
+              console.log(scroll);
+              if (scroll==500 || scroll<=711){  
+                for(scroll=500;scroll<711;scroll++){
+                  const val = window.pageYOffset * .1;
+                  footer2.style.marginTop=-1*val+'px';
+                }
+              }
+              });
+            
+            </script>
+<!---------------------------Footer------------------------->
+    
+<!--<div class="footer" style= "background-color: #ffffff;">
+
+  <div class="footer__div3">
+    LMS is the Learning Management system for the schools and education centers to provide digital support in better learning and communication with the student and parent.
+  </div>
+    <a href="https://srms.adhyay.co.in/index.php/Signup/Signup" class="footer__div3--link" target="_blank">  Know more!</a>
+</div>
+<script>
+  let footer1=document.querySelector(".footer");
+  window.addEventListener("scroll",()=>{
+  let scroll=window.pageYOffset;
+  console.log(scroll);
+  if (scroll==500 || scroll<=711){  
+    for(scroll=500;scroll<711;scroll++){
+      const val = window.pageYOffset * .1;
+      footer1.style.marginTop=-1*val+'px';
+    }
+  }
+  });
+
+</script>-->
+
+
+
+<!------------------------------JAVASCRIPT--------------------->
+     <script>
+          let img1=document.querySelector(".container__img--1");
+           window.addEventListener('wheel',()=>{
+              let scroll=window.pageYOffset;
+              console.log(scroll);
+              if(scroll==0)
+             {  
+              img1.style.backgroundPosition="0rem -5rem";
+              img1.style.transition="1.5s ease";
+             }
+             else if(scroll==300 ||scroll<=900)
+             {
+              img1.style.backgroundPosition="0rem 0rem";
+            img1.style.transition="1.5s ease";
+             }
+             else if(scroll==901 ||scroll<=1450){     
+              img1.style.backgroundPosition="0rem -10rem";
+              img1.style.transition="1.5s ease";
+             }
+             else
+             {
+              img1.style.backgroundPosition="0rem -5rem";
+              img1.style.transition="1.5s ease";
+             }
+          });
+         
+          
+        let img2=document.querySelector(".container__img--2");
+          window.addEventListener('scroll',()=>{
+              let scroll=window.pageYOffset;
+              if(scroll==0)
+             {  
+              img2.style.backgroundPosition="-13rem -5rem";
+              img2.style.transition="1.5s ease";
+             }
+             else if(scroll==300 ||scroll<=900)
+             {
+              img2.style.backgroundPosition="-13rem -10rem";
+            img2.style.transition="1.5s ease";
+             }
+             else if(scroll==901 ||scroll<=1450){     
+              img2.style.backgroundPosition="-13rem 0rem";
+              img2.style.transition="1.5s ease";
+             }
+             else
+             {
+              img2.style.backgroundPosition="-13rem -5rem";
+              img2.style.transition="1.5s ease";
+             }
+          });
+          let img3=document.querySelector(".container__img--3");
+          window.addEventListener('scroll',()=>{
+            let scroll=window.pageYOffset;
+            if(scroll==0)
+             {  
+              img3.style.backgroundPosition="-17rem -5rem";
+              img3.style.transition="1.5s ease";
+             }
+             else if(scroll==300 ||scroll<=900)
+             {
+              img3.style.backgroundPosition="-17rem 0rem";
+            img3.style.transition="1.5s ease";
+             }
+             else if(scroll==901 ||scroll<=1450){     
+              img3.style.backgroundPosition="-17rem -10rem";
+              img3.style.transition="1.5s ease";
+             }
+             else
+             {
+              img3.style.backgroundPosition="-17rem -5rem";
+              img3.style.transition="1.5s ease";
+             }
+          });
+          let img4=document.querySelector(".container__img--4");
+          window.addEventListener('scroll',()=>{
+            let scroll=window.pageYOffset;
+            if(scroll==0)
+             {  
+              img4.style.backgroundPosition="-27rem -2rem";
+              img4.style.transition="1.5s ease";
+             }
+             else if(scroll==300 ||scroll<=900)
+             {
+              img4.style.backgroundPosition="-27rem -10rem";
+            img4.style.transition="1.5s ease";
+             }
+             else if(scroll==901 ||scroll<=1450){     
+              img4.style.backgroundPosition="-27rem 0rem";
+              img4.style.transition="1.5s ease";
+             }
+             else
+             {
+              img4.style.backgroundPosition="-27rem -5rem";
+              img4.style.transition="1.5s ease";
+             }
+          });
+          let img5=document.querySelector(".container__img--5");
+          window.addEventListener('scroll',()=>{
+            let scroll=window.pageYOffset;
+            if(scroll==0)
+             {  
+              img5.style.backgroundPosition="-37rem -5rem";
+              img5.style.transition="1.5s ease";
+             }
+             else if(scroll==300 ||scroll<=900)
+             {
+              img5.style.backgroundPosition="-37rem 0rem";
+            img5.style.transition="1.5s ease";
+             }
+             else if(scroll==901 ||scroll<=1450){     
+              img5.style.backgroundPosition="-37rem -10rem";
+              img5.style.transition="1.5s ease";
+             }
+             else
+             {
+              img5.style.backgroundPosition="-37rem -5rem";
+              img5.style.transition="1.5s ease";
+             }
+          });
+          let img6=document.querySelector(".container__img--6");
+          window.addEventListener('scroll',()=>{
+            let scroll=window.pageYOffset;
+            if(scroll==0)
+             {  
+              img6.style.backgroundPosition="-47rem -5rem";
+              img6.style.transition="1.5s ease";
+             }
+             else if(scroll==300 ||scroll<=900)
+             {
+              img6.style.backgroundPosition="-47rem -10rem";
+            img6.style.transition="1.5s ease";
+             }
+             else if(scroll==901 ||scroll<=1450){     
+              img6.style.backgroundPosition="-47rem 0rem";
+              img6.style.transition="1.5s ease";
+             }
+             else
+             {
+              img6.style.backgroundPosition="-47rem -5rem";
+              img6.style.transition="1.5s ease";
+             }
+          });
+          let img7=document.querySelector(".container__img--7");
+          window.addEventListener('scroll',()=>{
+              let scroll=window.pageYOffset;
+              if(scroll==0)
+             {  
+              img7.style.backgroundPosition="-57rem -5rem";
+              img7.style.transition="1.5s ease";
+             }
+             else if(scroll==300 ||scroll<=900)
+             {
+              img7.style.backgroundPosition="-57rem 0rem";
+            img7.style.transition="1.5s ease";
+             }
+             else if(scroll==901 ||scroll<=1450){     
+              img7.style.backgroundPosition="-57rem -10rem";
+              img7.style.transition="1.5s ease";
+             }
+             else
+             {
+              img7.style.backgroundPosition="-57rem -5rem";
+              img7.style.transition="1.5s ease";
+             }
+          });
+          
+          let img8=document.querySelector(".container__img--8");
+          window.addEventListener('scroll',()=>{
+            let scroll=window.pageYOffset;
+            if(scroll==0)
+             {  
+              img8.style.backgroundPosition="-67rem -5rem";
+              img8.style.transition="1.5s ease";
+             }
+             else if(scroll==300 ||scroll<=900)
+             {
+              img8.style.backgroundPosition="-67rem -10rem";
+            img8.style.transition="1.5s ease";
+             }
+             else if(scroll==901 ||scroll<=1450){     
+              img8.style.backgroundPosition="-67rem 0rem";
+              img8.style.transition="1.5s ease";
+             }
+             else
+             {
+              img8.style.backgroundPosition="-67rem -5rem";
+              img8.style.transition="1.5s ease";
+             }
+          });
+          let img9=document.querySelector(".container__img--9");
+          window.addEventListener('scroll',()=>{
+            let scroll=window.pageYOffset;
+            if(scroll==0)
+             {  
+              img9.style.backgroundPosition="-77rem -5rem";
+              img9.style.transition="1.5s ease";
+             }
+             else if(scroll==300 ||scroll<=900)
+             {
+              img9.style.backgroundPosition="-77rem 0rem";
+            img9.style.transition="1.5s ease";
+             }
+             else if(scroll==901 ||scroll<=1450){     
+              img9.style.backgroundPosition="-77rem -10rem";
+              img9.style.transition="1.5s ease";
+             }
+             else
+             {
+              img9.style.backgroundPosition="-77rem -5rem";
+              img9.style.transition="1.5s ease";
+             }
+          });
+          let img10=document.querySelector(".container__img--10");
+          window.addEventListener('scroll',()=>{
+            let scroll=window.pageYOffset;
+            if(scroll==0)
+             {  
+              img10.style.backgroundPosition="-87rem -5rem";
+              img10.style.transition="1.5s ease";
+             }
+             else if(scroll==300 ||scroll<=900)
+             {
+              img10.style.backgroundPosition="-87rem -10rem";
+            img10.style.transition="1.5s ease";
+             }
+             else if(scroll==901 ||scroll<=1450){     
+              img10.style.backgroundPosition="-87rem 0rem";
+              img10.style.transition="1.5s ease";
+             }
+             else
+             {
+              img10.style.backgroundPosition="-87rem -5rem";
+              img10.style.transition="1.5s ease";
+             }
+          });
+        let box1=document.querySelector(".container__img--box--1");
+          window.addEventListener('scroll',()=>{
+              let scroll=window.pageYOffset;
+            if(scroll==0){  
+              box1.style.top="37.2rem";
+              box1.style.transition="3s ease";
+            }else if(scroll==300 ||scroll<=900)
+            {
+                box1.style.top="28.2rem";
+                box1.style.transition="1.5s ease";
+            }
+            else if(scroll==901 || scroll<=1450){  
+              box1.style.top="37.2rem";
+              box1.style.transition="3s ease";
+            }
+            else{
+              box1.style.top="37.2rem";
+              box1.style.transition="3s ease";
+            }
+          });
+          
+          let box2=document.querySelector(".container__img--box--2");
+          window.addEventListener('scroll',()=>{
+            let scroll=window.pageYOffset;
+            if(scroll==0){  
+              box2.style.top="37.2rem";
+              box2.style.transition="3s ease";
+            }             else if(scroll==300 ||scroll<=900)
+{
+                box2.style.top="12.2rem";
+                box2.style.transition="2s ease";
+            }
+            else if(scroll==901 || scroll<=1450){  
+              box2.style.top="45.2rem";
+              box2.style.transition="1.3s ease";
+            }
+            else{
+              box2.style.top="37.2rem";
+              box2.style.transition="3s ease";
+            }
+          });
+
+          
+          let box3=document.querySelector(".container__img--box--3");
+          window.addEventListener('scroll',()=>{
+            let scroll=window.pageYOffset;
+            if(scroll==0){  
+              box3.style.top="37.2rem";
+              box3.style.transition="3s ease";
+            }             
+            else if(scroll==300 ||scroll<=900)
+            {
+                box3.style.top="28.2rem";
+                box3.style.transition="1.5s ease";
+            }
+            else if(scroll==901 || scroll<=1450){  
+              box3.style.top="37.2rem";
+              box3.style.transition="3s ease";
+            }
+            else{
+              box3.style.top="37.2rem";
+              box3.style.transition="3s ease";
+            }
+          });
+        
+      </script>
+
+<!---------------------------------CONTENT 1----------------------------------->
+
+<div class="content1">
+  <div class="content1__divcontainer">
+    <div class="content1__divcontainer--1">
+      <h1>F</h1>
+      <img src="img/image--1.jpg" alt="content1-image"/>
+    </div>
+    <div class="content1__divcontainer--2">
+      <span></span><br>
+      <p>Features<br><br></p>
+      <ul>
+        <li>Enterprise/Institution  Login Page </li>
+        <li>Digital Homework </li>
+        <li>Interactive online tests</li>
+        <li>Create online video sessions</li>
+        <li>Automated Attendance</li>
+        <li>Digital Marksheet</li>
+        <li>Personalised parent dashboard</li>
+        <li>Cross Platform Documents Sharing</li>
+        <li>Automated Attendance</li>
+        <li><a href="https://srms.adhyay.co.in/index.php/Signup/Signup" class="register-link" target="_blank">Register here for a free demo</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+   
+  let imagee1=document.querySelector(".content1__divcontainer--1 img");
+           window.addEventListener('scroll',()=>{
+              let scroll=window.pageYOffset;
+              console.log(scroll);
+              if(scroll==1280 || scroll<=1684){
+                imagee1.style.top="-22rem";
+                imagee1.style.transition="3s ease";
+              }
+              else if(scroll==2050 || scroll<=1685){
+                imagee1.style.top="-15rem";
+                imagee1.style.transition="3s ease";
+              }
+              else{
+                imagee1.style.top="-18rem";
+                imagee1.style.transition="3s ease";
+              }             
+          });
+
+          let para1=document.querySelector(".content1__divcontainer--2 p");
+           window.addEventListener('scroll',()=>{
+              let scroll=window.pageYOffset;
+              console.log(scroll);
+              if(scroll==1280 || scroll<=1684){
+                para1.style.marginTop="9rem";
+                para1.style.transition="3s ease";
+              }
+              else if(scroll==2050 || scroll<=1685){
+                para1.style.marginTop="4rem";
+                para1.style.transition="3s ease";
+              }
+              else{
+                para1.style.marginTop="4rem";
+                para1.style.transition="3s ease";
+              }             
+          });
+
+         
+</script>
+
+<!---------------------------------CONTENT 2----------------------------------->
+
+<div class="content2">
+  <div class="content2__divcontainer">
+    <div class="content2__divcontainer--1">
+      <span></span><br>
+      <p>Advantages<br><br></p>
+      <ul>
+        <li>Safe environment for schools to teach</li>
+        <li>Personalized features according to school's need </li>
+        <li>End-to-end services</li>
+        <li>Easy access with advanced technology</li>
+        <li>Excellent after service from Adhyay Customer service team </li>
+        <li>High quality screens with fun to use tools</li>
+        <li>Solving daily management issues of the school</li>
+        <li>Low-risk / high-performance software for your need</li>
+          
+        <li><a href="https://srms.adhyay.co.in/index.php/Signup/Signup" class="register-link" target="_blank">Register here for a free demo</a></li>
+      </ul>
+    </div>
+    <div class="content2__divcontainer--2">
+      <h1>A</h1>
+      <img src="img/image--2.jpg"  alt="content2-image"/>
+    </div>
+  </div>
+</div>
+
+<script>
+
+let imagee2=document.querySelector(".content2__divcontainer--2 img");
+           window.addEventListener('scroll',()=>{
+              let scroll=window.pageYOffset;
+              console.log(scroll);
+              if(scroll==2100 || scroll<=2559){
+                imagee2.style.top="-18rem";
+                imagee2.style.transition="3s ease";
+              }
+              else if(scroll==2991 || scroll<=2560){
+                imagee2.style.top="-12rem";
+                imagee2.style.transition="3s ease";
+              }
+              else{
+                imagee2.style.top="-15rem";
+                imagee2.style.transition="3s ease";
+              }             
+          });
+
+          
+
+          let para2=document.querySelector(".content2__divcontainer--1 p");
+           window.addEventListener('scroll',()=>{
+              let scroll=window.pageYOffset;
+              console.log(scroll);
+              if(scroll==2100 || scroll<=2559){
+                para2.style.marginTop="8rem";
+                para2.style.transition="3s ease";
+              }
+              else if(scroll==2991 || scroll<=2760){
+                para2.style.marginTop="4rem";
+                para2.style.transition="3s ease";
+              }
+              else{
+                para2.style.marginTop="4rem";
+                para2.style.transition="3s ease";
+              }             
+          });
+
+
+
+
+</script>
+<!----------------------------------FOOTER------------------------------------->
+<div class="footerr">
+  <div class="footerr__div1">
+    <div class="footerr__div1--1">
+      <ul>
+        <li class="list-heading">Sitemap</li>
+        <li>Home</li>
+        <li>LMS</li>
+        <li>LMS + ERP</li>
+        <li>LMS + Video Conferencing</li>
+        <li>ERP</li>
+        <li>LMS + ERP + Video Conferencing</li>
+      </ul>
+    </div>
+    <div class="footerr__div1--2">
+      <ul>
+        <li class="list-heading">Services</li>
+        <li>Software As a Service</li>
+        <li>Tools for problem solving</li>
+        <li>Seamless customer service</li>
+        <li>Top User Interface</li>
+        <li>Featuring artistic technology</li>
+        <li>Encrypted data/information</li>
+        <li>Secured cloud based service</li>
+      </ul>
+    </div>
+    <div class="footerr__div1--3">
+      <ul>
+        <li class="list-heading">Adhyay Values</li>
+        <li>Privacy Policy</li>
+        <li>Technology revolution</li>
+        <li>Valuable product</li>
+        <li>Global solution</li>
+        <li>Robust automation</li>
+        <li>Eco friendly solution</li>
+        <li>Human-like technology</li>
+      </ul>
+    </div>
+    <div class="footerr__div1--4">
+      <ul>
+        <li class="list-heading">For Schools</li>
+        <li>Automation</li>
+        <li>Security</li>
+        <li>Communication</li>
+        <li>Information</li>
+        <li class="list-heading">For Corporates</li>
+        <li>Automation</li>
+        <li>Security</li>
+        <li>Advancement</li>
+      </ul>
+    </div>
+    <div class="footerr__div1--5">
+      <ul>
+        <li class="list-heading">Video Conferencing</li>
+        <li>Automation</li>
+        <li>Security</li>
+        <li>Communication</li>
+        <li>Information</li>
+       
+      </ul>
+    </div>
+  </div>
+    <div class="footerr__div2">
+      © Copyrights with Adhyay. All rights are reserved.
+  </div>
+  
+</div>
+  
+  </body>
+</html>

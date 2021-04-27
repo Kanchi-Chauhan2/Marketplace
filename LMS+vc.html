@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>LMS</title>
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>   
+
+<!-----------------------------MENU-------------------------->
+
+<div class="menu" style="background-color: currentColor;">
+  <div class="menu__header">
+    <div class="menu__header--1">
+      <ul>
+        <li><a href="https://adhyay.co.in/" style="font-size:1.6rem; color:gray;">HOME</a></li>
+      </ul>
+    </div>
+    <div class="menu__header--2">
+      <ul>
+        <li><a href="LMS.html" style="font-size:1.6rem; color:gray;">LMS</a></li>
+      </ul>
+    </div>
+       <div class="menu__header--2">
+      <ul>
+        <li><a href="LMS.html" style="font-size:1.6rem; color:gray;">Video Conferencing</a></li>
+      </ul>
+    </div>
+          <div class="menu__header--2">
+      <ul>
+        <li><a href="content.html#" style="font-size:1.6rem; color:gray;">LMS + Video Conferencing</a></li>
+      </ul>
+    </div>
+          <div class="menu__header--3">
+      <ul>
+        <li><a href="SRMS.html#" style="font-size:1.6rem; color:gray;">ERP</a></li>
+      </ul>
+    </div>
+    <div class="menu__header--2">
+      <ul>
+        <li><a href="LMS+ERP.html" style="font-size:1.6rem; color:gray;">LMS + ERP</a></li>
+      </ul>
+    </div>
+
+    <div class="menu__header--3">
+      <ul>
+        <li><a href="vc.html#" style="font-size:1.6rem; color:gray;;">LMS + Video Conferencing + ERP</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!----------------------------------BANNER------------------------------------->
+<div class="container">
+  <div class="vccontainer">
+    <div class="vccontainer__inner">
+      <div class="vccontainer__inner--1">
+        <p>We are <span>Adhyay</span>. Our vision is to <br><span>Integrate value system</span> in an organisation.<br>We believe in <span>futuristic ideas and products</span></p>
+      </div>
+      <div class="vccontainer__inner--2">
+        <div class="vccontainer__inner--2--mobile1">  
+        <div class="vccontainer__inner--2--mobile1--plus">&plus;</div>
+        <img src="img/mobile_01.png" alt="mobile-image">  
+      </div>
+    <div class="vccontainer__inner--2--mobile2"> 
+        <div class="vccontainer__inner--2--mobile2--plus">&plus;</div>
+        <img src="img/mobile_02.png" alt="mobile-image">
+      </div>
+    </div>
+    </div>
+  </div>
+  
+</div>
+
+<script>
+
+let banner=document.querySelector('.vccontainer');
+  banner.addEventListener('mousemove',hovering1);
+  banner.addEventListener('mouseover',hovering1);
+  banner.addEventListener('mouseout',hovering1);
+
+  function hovering1(e){
+    let height = banner.getBoundingClientRect().height;
+    let width = banner.getBoundingClientRect().width;
+    let x=(width-e.pageX*1.5)/100;
+    let y=(height-e.pageY*1.5)/100;
+    banner.style.backgroundPosition=`${x}px ${y}px`;
+    banner.style.transform=`perspective(${1000}rem) rotateX(${x}deg) rotateY(${y}deg)`;
+  };
+
+  let banner1=document.querySelector('.vccontainer__inner p');
+  banner1.addEventListener('mousemove',hovering);
+  banner1.addEventListener('mouseover',hovering);
+  banner1.addEventListener('mouseout',hovering);
+
+  function hovering(e){
+    let height = banner1.getBoundingClientRect().height;
+    let width = banner1.getBoundingClientRect().width;
+    let x=(width-e.pageX*1.5)/100;
+    let y=(height-e.pageY*2)/100;
+    banner1.style.transform=`translateX(${x}px) translateY(${y}px)`;    
+  };
+
+  let mobile1=document.querySelector('.vccontainer__inner--2--mobile1');
+  mobile1.addEventListener('mousemove',mobilefunc);
+  mobile1.addEventListener('mouseover',mobilefunc);
+  mobile1.addEventListener('mouseout',mobilefunc);
+
+  function mobilefunc(e){
+    let height = mobile1.getBoundingClientRect().height;
+    let width = mobile1.getBoundingClientRect().width;
+    let x=(width-e.pageX*3)/100;
+    let y=(height-e.pageY*3)/100;
+    mobile1.style.transform=`perspective(${800}rem) rotateX(${x}deg) rotateY(${y}deg) rotateZ(${2}deg)`;
+  };
+
+  let mobile2=document.querySelector('.vccontainer__inner--2--mobile2');
+  mobile2.addEventListener('mousemove',mobilefunc1);
+  mobile2.addEventListener('mouseover',mobilefunc1);
+  mobile2.addEventListener('mouseout',mobilefunc1);
+
+  function mobilefunc1(e){
+    let height = mobile2.getBoundingClientRect().height;
+    let width = mobile2.getBoundingClientRect().width;
+    let x=(width-e.pageX*1)/100;
+    let y=(height-e.pageY*2)/100;
+    mobile2.style.transform=`perspective(${800}rem) rotateX(${x}deg) rotateY(${y}deg) rotateZ(${3}deg)`;
+  };
+</script>
+
+<!---------------------------------Information------------------------------------->
+
+<div class="information">
+  <div class="information__content">
+    <div class="information__content--1">
+      QUADRA EXCLUSIVE THEME
+    </div>
+    <div class="information__content--2">
+      Meet with Quadra. This is a super responsive
+and exclusive theme for your stories. Just check the features!
+    </div>
+    <div class="information__content--3">
+      It is a long established fact that a reader will be distracted
+    </div>
+    <div class="information__content--4">
+      
+    </div>
+    <div class="information__content--5">
+      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by astrono injected humour, or randomised words which suffered don't look even slightly believable. If you are going to use a passage of, you contuniue isn't anything embarrassing hidden middle of text. All the Lorem Ipsum generators on the making this the generatoristralling first true on the which don't look even slightly believable.
+    </div>
+  </div>
+</div>
+
+<!----------------------PAYMENT CARDS---------------------------->
+
+<div class="payment">
+  <div class="payment__container">
+    <div class="payment__container--1">
+      <div class="payment__container--1--heading">
+        ADHYAY YU
+      </div>
+      <div class="payment__container--1--para">
+        India based technology company to provide video conferencing in and around the world. Our main aim is to provide stable connectivity with secure data and information.
+      </div>
+      <div class="payment__container--1--line">
+
+      </div>
+      
+    </div>
+    <div class="payment__container--2">
+      <div class="payment__container--2--img">
+        <img src="img/kanchi_world.png" alt=""/>
+
+      </div>
+      <div class="payment__container--2--features">
+        <h1>Our Features</h1>
+        <ul>
+        <li>Connecting thousands of people in a single call.</li>
+        <li>Share a single tab or entire screen during call.</li>
+        <li>Ease of personal messaging with an individual in a group call.</li>
+        <li>Presenting to you richer video calling experience with dedicated security of data.</li>
+        <li>Advantage of keeping track of calls in call logs.</li>
+      </ul>
+      <button>Download for MAC</button><br>
+      <button>Download for Windows</button><br>
+      <button>Continue using Web</button>
+      </div>
+    </div>
+    <div class="payment__container--3">
+      <div class="payment__container--3--free">
+        <h2>FREE SUBSCRIPTION</h2>
+        <div class="payment__container--3--free--container">
+          <div class="payment__container--3--free--container--part1">
+            <ul>
+              <li>Unlimited hours</li>
+              <li>Unlimited days</li>
+              <li>Unlimited fun</li>
+              <li>Unlimited data sharing</li>
+
+            </ul>
+          </div>
+          <div class="payment__container--3--free--container--part2">
+            <h1>FREE</h1>
+            <h6>4 screens available</h6>
+          </div>
+        </div>
+      </div>
+      <div class="payment__container--3--standard">
+        <h2>STANDARD</h2>
+
+        <div class="payment__container--3--standard--container">
+
+          <div class="payment__container--3--standard--container--part1">
+            <p>Monthly<br>1200/-<br>per month</p>
+          </div>
+          <div class="payment__container--3--standard--container--part2">
+            <p>Quarterly<br>3400/-<br>per quarter</p>
+          </div>
+          <div class="payment__container--3--standard--container--part3">
+            <p>Annually<br>11,000/-<br>per annum</p>
+          </div>          
+        </div>
+        <a href="Payment.html">BUY NOW</a>
+      </div>
+      <div class="payment__container--3--premium">
+        <h2>PREMIUM</h2>
+        <div class="payment__container--3--premium--container">
+
+          <div class="payment__container--3--premium--container--part1">
+            <p>Monthly<br>1200/-<br>per month</p>
+          </div>
+          <div class="payment__container--3--premium--container--part2">
+            <p>Quarterly<br>4000/-<br>per quarter</p>
+          </div>
+          <div class="payment__container--3--premium--container--part3">
+            <p>Annually<br>16,000/-<br>per year</p>
+          </div>          
+        </div>
+        <a href="Payment.html">BUY NOW</a>
+      </div>
+      <div class="payment__container--3--advance">
+        <h2>ADVANCE</h2>
+        <div class="payment__container--3--advance--container">
+
+          <div class="payment__container--3--advance--container--part1">
+            <p>Monthly<br>1800/-<br>per month</p>
+          </div>
+          <div class="payment__container--3--advance--container--part2">
+            <p>Quarterly<br>5000/-<br>per quarter</p>
+          </div>
+          <div class="payment__container--3--advance--container--part3">
+            <p>Annually<br>20,000/-<br>per year</p>
+          </div>          
+        </div>
+        <a href="Payment.html">BUY NOW</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----------------------------------FOOTER------------------------------------->
+<div class="footerr">
+  <div class="footerr__div1">
+    <div class="footerr__div1--1">
+      <ul>
+        <li class="list-heading">Sitemap</li>
+        <li>Home</li>
+        <li>LMS</li>
+        <li>LMS + ERP</li>
+        <li>LMS + Video Conferencing</li>
+        <li>ERP</li>
+        <li>LMS + ERP + Video Conferencing</li>
+      </ul>
+
+    </div>
+    <div class="footerr__div1--2">
+      <ul>
+        <li class="list-heading">Services</li>
+        <li>Software As a Service</li>
+        <li>Tools for problem solving</li>
+        <li>Seamless customer service</li>
+        <li>Top User Interface</li>
+        <li>Featuring artistic technology</li>
+        <li>Encrypted data/information</li>
+        <li>Secured cloud based service</li>
+      </ul>
+    </div>
+    <div class="footerr__div1--3">
+      <ul>
+        <li class="list-heading">Adhyay Values</li>
+        <li>Privacy Policy</li>
+        <li>Technology revolution</li>
+        <li>Valuable product</li>
+        <li>Global solution</li>
+        <li>Robust automation</li>
+        <li>Eco friendly solution</li>
+        <li>Human-like technology</li>
+      </ul>
+    </div>
+    <div class="footerr__div1--4">
+      <ul>
+        <li class="list-heading">For Schools</li>
+        <li>Automation</li>
+        <li>Security</li>
+        <li>Communication</li>
+        <li>Information</li>
+        <li class="list-heading">For Corporates</li>
+        <li>Automation</li>
+        <li>Security</li>
+        <li>Advancement</li>
+      </ul>
+    </div>
+    <div class="footerr__div1--5">
+      <ul>
+        <li class="list-heading">Video Conferencing</li>
+        <li>Automation</li>
+        <li>Security</li>
+        <li>Communication</li>
+        <li>Information</li>
+       
+      </ul>
+    </div>
+  </div>
+    <div class="footerr__div2">
+      © Copyrights with Adhyay. All rights are reserved.
+  </div>
+  
+</div>
+  
+  </body>
+</html> 

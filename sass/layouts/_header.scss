@@ -1,0 +1,222 @@
+.parallax{
+    margin:0;
+    padding:0;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+
+}
+.parallax-container{
+    position:relative;
+    &__logo{
+        display:flex;
+        transform:translateX(5rem);
+        position:absolute;
+        bottom:2rem;
+        right:50%;
+
+        &--image-logo{
+            width:9.9rem;
+            height:8.9rem;
+        }
+    }
+    &__penpot{
+        position:absolute;
+        top:-15.8rem;
+        left:-28rem;
+        animation:penpotanimate 2.6s ease-out;
+    }
+    &__heading{
+        display:flex;
+        flex-direction:column;
+        width:fit-content;
+        align-items: center;
+        margin:auto;
+        transform:translateY(30rem);
+        &--h1{
+            font-family:"Lato", sans-serif;
+            font-size:6rem;
+            color:#0e142b;
+            backface-visibility: hidden;
+            animation:heading 3s ease;
+            overflow:visible;
+        }
+        &--link{
+            margin-top:4rem;
+            border:1px solid aqua;
+            padding:1.5rem 4rem;
+            background-image: linear-gradient(#53f550, #162e45);
+            border:none;
+            color:white;
+            font-weight: 500;
+            border-radius: 1rem;
+        }
+    }
+    &__flowerpot{
+        position:absolute;
+        top:-12rem;
+        right:8rem;
+        animation:flowerpotanimate 2.5s ease;
+        &--flower-pot{
+            width:50rem;
+        }
+    }
+    &__tablet{
+        position:absolute;
+        top:37rem;
+        right:-6rem;
+        animation:tabletanimate 3s  ease;
+        &--tablett{
+            width:50rem;
+        }
+    }
+    &__headeredding{
+        position:absolute;
+        top:34rem;
+        left:29rem;
+        z-index:100000000000000000000000;
+        animation:reddinganimate 3s ease;
+    }
+    &__headerpapers{
+        position:absolute;
+        top:14rem;
+        left:-33rem;
+        animation:paperanimate 3s ease;
+    }
+    &__headermarker{
+        position:absolute;
+        top:33rem;
+        left:8rem;
+        animation:markeranimate 3s ease;
+    }
+    &__headerclip{
+        position:absolute;
+        top:32rem;
+        left:27rem;
+        animation:clipanimate 3s ease;
+    }
+    &__headerclip2{
+        position:absolute;
+        top:35rem;
+        left:31rem;
+        transform: skew(-15deg,26deg);
+        animation: clip2animate 3s ease;
+    }
+    &__tablet-pen{
+        position:absolute;
+        right:35rem;
+        top:30rem;
+        animation:tabletpenanimate 3s ease;
+        &--tablett-pen{
+            width:20rem;
+        }
+    }
+}
+@keyframes penpotanimate{
+    0%{
+        top:-32.8rem;
+        left:-40rem;
+        transform:rotate(10deg);
+    }
+    100%{
+        top:-15.8rem;
+        left:-28rem;
+        transform: rotate(0deg);
+    }
+}
+@keyframes heading{
+    0%{
+       font-size:9rem;
+    }
+    100%{
+        font-size:6rem;
+    }
+}
+@keyframes flowerpotanimate{
+    0%{
+        top:-30rem;
+        right:-9rem;
+        transform:rotate(-50deg);
+    }
+    100%{
+        top:-12rem;
+        right:8rem;
+        transform:rotate(0deg);
+    }
+}
+@keyframes paperanimate{
+    0%{
+        top:41rem;
+        transform:rotate(30deg);
+    }
+    100%{
+        top:14rem;
+        
+    }
+}
+@keyframes reddinganimate{
+    0%{
+        top:55rem;
+        transform: rotate(40deg);
+        
+    }
+    100%{
+        top:34rem;
+        
+    }
+}
+@keyframes markeranimate{
+    0%{
+        top:59rem;
+        transform: rotate(30deg);
+    }
+    100%{
+        top:33rem;
+        
+    }
+}
+@keyframes clipanimate{
+    0%{
+        top:39rem;
+        transform: rotate(40deg);
+        
+    }
+    100%{
+        top:32rem;
+        
+    }
+}
+@keyframes clip2animate{
+    0%{
+        top:42rem;
+        transform:rotate(60deg);
+        
+    }
+    100%{
+        top:35rem;
+        
+    }
+}
+@keyframes tabletpenanimate{
+    0%{
+        top:17rem;
+        right:-10rem;
+        transform: rotate(35deg);
+    }
+    100%{
+        top:30rem;
+        right:35rem;
+    }
+}
+@keyframes tabletanimate{
+    0%{
+        top:57rem;
+        right:-28rem;
+        transform: rotate(80deg);
+    }
+    100%{
+        top:37rem;
+        right:-6rem;
+
+    }
+}
